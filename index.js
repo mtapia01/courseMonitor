@@ -5,9 +5,6 @@ const { google } = require("googleapis");
 const { count } = require("console");
 const cron = require('node-cron');
 
-// cron.schedule('* * * * *', function() {
-//   console.log('running a task');
-// });
 
 const url = "https://mystudentrecord.ucmerced.edu/pls/PROD/xhwschedule.P_ViewCrnDetail?subjcode=CRES&crsenumb=001&validterm=202230&crn=34276"; // Set website you want to screenshot
 
@@ -70,14 +67,6 @@ function main() {
         );
       authorize(JSON.parse(content), sendEmailCallBack);
     } 
-    // else {
-    //   var seconds = 1000; // 12 hours 43200
-    //   var millisecond = 1000; // 1 millisecond
-    //   var secToMilliConvert = seconds * millisecond;
-
-    //   setTimeout(main, secToMilliConvert); //wait 50 millisecnds then recheck
-    //   return;
-    // }
   });
 
   /**
