@@ -8,7 +8,7 @@ const cron = require('node-cron');
 
 const url = "https://mystudentrecord.ucmerced.edu/pls/PROD/xhwschedule.P_ViewCrnDetail?subjcode=CRES&crsenumb=001&validterm=202230&crn=34276"; // Set website you want to screenshot
 
-cron.schedule('* * * * *', function() {
+cron.schedule('* 12 * * *', function() {
   console.log('running a task');
   main();
 });
