@@ -57,7 +57,7 @@ function main() {
     const { courseName, seats, remaining } = await getTableElements();
     
 
-    if (remaining >= 0) {
+    if (remaining > 0) {
       const sendEmailCallBack = (auth) =>
         sendEmail(
           auth,
