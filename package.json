@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "index": "node index.js"
+    "index": "node index.js",
+    "start": "npm run index"
   },
   "dependencies": {
     "googleapis": "^100.0.0",
